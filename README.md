@@ -42,6 +42,22 @@ PaperCraft is a modern, responsive platform designed for students to browse and 
 * **Tools:** Spring Tool Suite (STS), MySQL Workbench, Git
 ---
 
+## 🔌 API Endpoints
+
+Base URL: `http://localhost:8080/api/products`
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/` | Get all products |
+| GET | `/{id}` | Get single product by ID |
+| GET | `/available` | Get only in-stock products |
+| GET | `/category/{category}` | Get products by category |
+| GET | `/search?keyword=pen` | Search products by keyword |
+| GET | `/categories` | Get all category names |
+| POST | `/` | Create a new product |
+| PUT | `/{id}` | Update an existing product |
+| DELETE | `/{id}` | Delete a product |
+```---
 
 
 ## 📁 Project Structure
