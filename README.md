@@ -36,7 +36,7 @@
 PaperCraft is a modern, responsive platform designed for students to browse and manage school supplies. The project demonstrates a complete integration between a professional front-end interface and a robust Spring Boot back-end.
 
 ## 🛠️ Tech Stack
-* **Front-End:** HTML5, CSS3, JavaScript (ES6+)
+* **Front-End:** HTML5, CSS3, JavaScript
 * **Back-End:** Java 17, Spring Boot, Spring Data JPA
 * **Database:** MySQL
 * **Tools:** Spring Tool Suite (STS), MySQL Workbench, Git
@@ -57,9 +57,8 @@ Base URL: `http://localhost:8080/api/products`
 | POST | `/` | Create a new product |
 | PUT | `/{id}` | Update an existing product |
 | DELETE | `/{id}` | Delete a product |
-```---
-
-
+```
+```
 ## 📁 Project Structure
 
 ```
