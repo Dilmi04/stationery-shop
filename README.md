@@ -4,6 +4,11 @@
 > 
 ---
 
+Name: S.A.D.Sandunika
+Index Number: FC221045
+
+---
+
 ## 🌟 Features
 
 ### 🛍️ Customer Shop Page
@@ -92,6 +97,3 @@ stationery-shop/
 ### 3. Frontend
 1. Open the `index.html` file in any modern web browser.
 
----
-Developed by S.A.D.Sandunika 
-FC221045
