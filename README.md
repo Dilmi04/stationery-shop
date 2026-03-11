@@ -57,8 +57,8 @@ Base URL: `http://localhost:8080/api/products`
 | POST | `/` | Create a new product |
 | PUT | `/{id}` | Update an existing product |
 | DELETE | `/{id}` | Delete a product |
-```
-```
+---
+
 ## 📁 Project Structure
 
 ```
