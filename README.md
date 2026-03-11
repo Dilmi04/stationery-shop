@@ -1,11 +1,8 @@
 # 🖊️ PaperCraft - Stationery & School Supplies E-Commerce Platform
 
 > A full-stack e-commerce web application for stationery and school supplies, built with Spring Boot, MySQL, and Vanilla JavaScript.
-
+> 
 ---
-FC221045 - S.A.D.Sandunika
----
-
 
 ## 🌟 Features
 
@@ -30,29 +27,14 @@ FC221045 - S.A.D.Sandunika
 
 ---
 
-## 🏗️ Tech Stack
+## 🌟 Project Overview
+PaperCraft is a modern, responsive platform designed for students to browse and manage school supplies. The project demonstrates a complete integration between a professional front-end interface and a robust Spring Boot back-end.
 
-### Frontend
-| Technology | Purpose |
-|-----------|---------|
-| HTML5 | Page structure |
-| CSS3 | Styling, animations, responsive design |
-| Vanilla JavaScript | All interactivity and API calls |
-
-
-
-### Backend
-| Technology | Purpose |
-|-----------|---------|
-| Java 17 | Programming language |
-| Spring Boot 3.2 | Backend framework |
-| Spring Web | REST API creation |
-| Spring Data JPA | Database communication |
-| Spring Validation | Input validation |
-| Hibernate | ORM - maps Java objects to database tables |
-| MySQL | Relational database |
-| Maven | Dependency management and build tool |
-
+## 🛠️ Tech Stack
+* **Front-End:** HTML5, CSS3, JavaScript (ES6+)
+* **Back-End:** Java 17, Spring Boot, Spring Data JPA
+* **Database:** MySQL
+* **Tools:** Spring Tool Suite (STS), MySQL Workbench, Git
 ---
 
 ## 📁 Project Structure
@@ -95,43 +77,21 @@ stationery-shop/
 
 ---
 
-## 🗄️ Database
+## 🚀 How to Run Locally
 
-**Database name:** `stationery_db`
+### 1. Database Setup
+1. Create a MySQL database named `stationery_db`.
+2. Update the `src/main/resources/application.properties` file with your MySQL username and password.
+3. The tables will be automatically created by Hibernate on the first run.
 
-**Products table columns:**
+### 2. Backend (Spring Boot)
+1. Import the `stationery-backend` folder into **Spring Tool Suite (STS)**.
+2. Run the project as a **Spring Boot App**.
+3. The API will be available at `http://localhost:8080/api/products`.
 
-| Column | Type | Description |
-|--------|------|-------------|
-| id | BIGINT (auto) | Primary key |
-| name | VARCHAR | Product name |
-| category | VARCHAR | Product category |
-| price | DOUBLE | Price per unit |
-| stock_quantity | INT | Number in stock |
-| description | TEXT | Full product description |
-| image_url | VARCHAR | Optional product image link |
-| brand | VARCHAR | Brand name |
-| available | BIT | true = in stock |
-
-**Categories available:**
-`Pens` · `Pencils` · `Notebooks` · `Markers` · `Exercise Books` · `Geometry` · `Art & Craft` · `Office` · `Paper` · `Pencil Cases` · `Lunch Boxes` · `Water Bottles` · `School Bags`
+### 3. Frontend
+1. Open the `index.html` file in any modern web browser.
 
 ---
-
-## 📸 Pages Overview
-
-### 🛍️ Shop Page (`index.html`)
-- Luxury hero banner with animated gradient
-- Category chip strip for quick filtering
-- Sticky search bar with sort dropdown
-- Product grid with hover effects
-- Cart sidebar slides in from the right
-- Product detail modal with spring animation
-
-### 🛠️ Admin Panel (`admin.html`)
-- Stats dashboard with 4 metric cards
-- Add/Edit product form on the left
-- Full product table with search on the right
-- Delete confirmation popup
-
----
+Developed by S.A.D.Sandunika 
+FC221045
