@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PaperCraft - Fine Stationery & School Supplies</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-pen-nib"></i>
+      PaperCraft<span class="logo-dot">.</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active"><i class="fa-solid fa-shop"></i> Shop</a>
+      <a href="admin.html"><i class="fa-solid fa-screwdriver-wrench"></i> Admin</a>
+    </div>
+    <button class="cart-btn" onclick="openCart()">
+      <i class="fa-solid fa-basket-shopping"></i>
+      Cart
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">New Collection 2026</div>
+    <h1>
+      <em>Premium</em>
+      <strong>Stationery &amp; Supplies</strong>
+    </h1>
+    <p class="hero-sub">Curated stationery from the world's finest brands. Everything a student needs to write, create, and organise beautifully.</p>
+    <div class="hero-actions">
+      <a href="#shop-start" class="hero-btn-primary">
+        <i class="fa-solid fa-arrow-down"></i> Browse Collection
+      </a>
+      <a href="admin.html" class="hero-btn-secondary">
+        <i class="fa-solid fa-screwdriver-wrench"></i> Admin Panel
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY CHIPS -->
+<div class="category-strip">
+  <div class="category-strip-inner" id="categoryChips">
+    <button class="cat-chip active" onclick="selectChip(this, '')">
+      <i class="fa-solid fa-grid-2"></i> All Products
+    </button>
+  </div>
+</div>
+
+<!-- SEARCH & FILTER -->
+<section class="controls-bar" id="shop-start">
+  <div class="controls-inner">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search pens, notebooks, markers…" oninput="handleSearch()"/>
+      <button class="clear-search" id="clearSearch" onclick="clearSearch()" style="display:none">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <select id="categoryFilter" onchange="filterByCategory()" style="display:none"></select>
+    <select id="sortFilter" onchange="applySortAndRender()">
+      <option value="default">↕ Sort: Default</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+      <option value="name-asc">Name: A → Z</option>
+      <option value="name-desc">Name: Z → A</option>
+    </select>
+  </div>
+</section>
+
+<!-- RESULTS INFO -->
+<div class="results-bar">
+  <span id="resultsCount">Loading products…</span>
+</div>
+
+<!-- PRODUCT GRID -->
+<main class="shop-main">
+  <div class="product-grid" id="productGrid">
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Loading collection…</p>
+    </div>
+  </div>
+</main>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+<aside class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h2><i class="fa-solid fa-basket-shopping"></i> Your Cart</h2>
+    <button class="cart-close-btn" onclick="closeCart()"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <div class="cart-empty-msg">
+      <i class="fa-regular fa-face-sad-tear"></i>
+      <p>Your cart is empty</p>
+      <small>Add some beautiful products!</small>
+    </div>
+  </div>
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total-row">
+      <span>Total</span>
+      <strong id="cartTotal">LKR 0.00</strong>
+    </div>
+    <button class="checkout-btn"><i class="fa-solid fa-credit-card"></i> Proceed to Checkout</button>
+    <button class="clear-cart-btn" onclick="clearCart()">Clear cart</button>
+  </div>
+</aside>
+
+<!-- PRODUCT MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+<div class="product-modal" id="productModal">
+  <button class="modal-close-btn" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+  <div class="modal-body" id="modalBody"></div>
+</div>
+
+<!-- TOAST -->
+<div class="toast-msg" id="toastMsg"></div>
+
+<script src="js/api.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
