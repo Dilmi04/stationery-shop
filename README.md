@@ -1,10 +1,11 @@
 # 🖊️ PaperCraft - Stationery & School Supplies E-Commerce Platform
 
-![PaperCraft Banner](https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?w=1200&h=300&fit=crop)
-
 > A full-stack e-commerce web application for stationery and school supplies, built with Spring Boot, MySQL, and Vanilla JavaScript.
 
 ---
+FC221045 - S.A.D.Sandunika
+---
+
 
 ## 🌟 Features
 
@@ -26,14 +27,6 @@
 - **Delete product** - confirmation popup before deleting
 - **Search table** - filter the admin table by name, category, or brand
 - **Status badges** - In Stock / Low Stock / Out of Stock shown per product
-
-### 🎨 Design
-- Luxury stationery boutique aesthetic
-- Fonts: **Cormorant Garamond** (elegant serif) + **Outfit** (clean sans-serif)
-- Color palette: warm ink black + amber/gold accents on cream paper background
-- Smooth animations - cards fade in, modals spring open, cart slides in
-- Fully responsive - works on desktop, tablet, and mobile
-- Category chip strip for quick browsing
 
 ---
 
@@ -102,10 +95,6 @@ stationery-shop/
 
 ---
 
-```
-
----
-
 ## 🗄️ Database
 
 **Database name:** `stationery_db`
@@ -129,20 +118,6 @@ stationery-shop/
 
 ---
 
-## ⚙️ Setup & Installation
-
-### Prerequisites
-Make sure you have these installed:
-- ☕ Java JDK 17 or above
-- 🗄️ MySQL Server 8.0
-- 🌱 Spring Tool Suite (STS) 4
-- 💻 VS Code with Live Server extension
-- 🔧 Maven (included with STS)
-
----
-
----
-
 ## 📸 Pages Overview
 
 ### 🛍️ Shop Page (`index.html`)
@@ -158,18 +133,5 @@ Make sure you have these installed:
 - Add/Edit product form on the left
 - Full product table with search on the right
 - Delete confirmation popup
-
----
-
-## 🎨 Design Decisions
-
-| Decision | Reason |
-|----------|--------|
-| Cormorant Garamond font | Gives a premium, luxury stationery feel |
-| Warm amber/gold accent color | Represents paper and ink naturally |
-| Dark navy navbar | Strong contrast, professional look |
-| Card hover overlay buttons | Modern UX pattern - reduces visual clutter |
-| Sticky search bar | Easy access while scrolling through products |
-| Smart empty states | Friendly UX - guides users when nothing is found |
 
 ---
