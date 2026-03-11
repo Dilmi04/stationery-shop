@@ -1,11 +1,11 @@
 # 🖊️ PaperCraft - Stationery & School Supplies E-Commerce Platform
 
-> A full-stack e-commerce web application for stationery and school supplies, built with Spring Boot, MySQL, and Vanilla JavaScript.
-> 
+ A full-stack e-commerce web application for stationery and school supplies, built with Spring Boot, MySQL, and Vanilla JavaScript.
+ 
 ---
 
-Name: S.A.D.Sandunika
-Index Number: FC221045
+` Name: S.A.D.Sandunika
+` Index Number: FC221045
 
 ---
 
